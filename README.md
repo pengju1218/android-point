@@ -8,5 +8,6 @@
 
 
 2.AMS提供的功能主要包括以下几个方面：
+   
    (1)对于Android四大组件（activity service broadcast content provider）的管理，包括启动，生命周期管理等
    (2)进程OOM adj以级LRU weight管理
