@@ -42,3 +42,16 @@ AMS提供的功能主要包括以下几个方面：
 (2). BroadcastTimeout(10 seconds) --BroadcastReceiver在特定时间内无法处理完成
 (3). ServiceTimeout(20 seconds) --小概率类型 Service在特定的时间内无法处理完成
  
+
+
+7.理解Activity，View,Window三者关系
+
+这个问题真的很不好回答。所以这里先来个算是比较恰当的比喻来形容下它们的关系吧。Activity像一个工匠（控制单元），Window像窗户（承载模型），View像窗花（显示视图）LayoutInflater像剪刀，Xml配置像窗花图纸。
+1：Activity构造的时候会初始化一个Window，准确的说是PhoneWindow。
+2：这个PhoneWindow有一个“ViewRoot”，这个“ViewRoot”是一个View或者说ViewGroup，是最初始的根视图。
+3：“ViewRoot”通过addView方法来一个个的添加View。比如TextView，Button等
+4：这些View的事件监听，是由WindowManagerService来接受消息，并且回调Activity函数。比如onClickListener，onKeyDown等。
+
+
+
+
