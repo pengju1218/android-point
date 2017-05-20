@@ -2,6 +2,8 @@
 Android从启动到程序运行发生的事情:http://blog.csdn.net/jonstank2013/article/details/51118563（重要，需要多看看）
 Android内存泄露  http://blog.csdn.net/gemmem/article/details/13017999
  
+ 
+ 
 1.MiniSdkVersion小于 13 时候：
 
 （1）不设置Activity的android:configChanges时，切屏会重新调用各个生命周期，切横屏时会执行一次，切竖屏时会执行两次
