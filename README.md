@@ -1,4 +1,6 @@
 # android-point
+Android从启动到程序运行发生的事情:http://blog.csdn.net/jonstank2013/article/details/51118563
+
 
 1.MiniSdkVersion小于 13 时候：
 
