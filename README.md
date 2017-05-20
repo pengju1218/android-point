@@ -25,3 +25,10 @@ AMS提供的功能主要包括以下几个方面：
 
 
 4.PMS用来管理所有的package信息，包括安装、卸载、更新以及解析AndroidManifest.xml以组织相应的数据结构，
+
+
+5.android事件
+（1）public boolean dispatchTouchEvent(MotionEvent ev)  这个方法用来分发TouchEvent，返回true，事件传递，返回false，不传
+（2）public boolean onInterceptTouchEvent(MotionEvent ev) 这个方法用来拦截TouchEvent，默认返回false，返回true表示拦截。
+（3）public boolean onTouchEvent(MotionEvent ev) 这个方法用来处理TouchEvent
+ 
