@@ -34,4 +34,11 @@ AMS提供的功能主要包括以下几个方面：
 （1）public boolean dispatchTouchEvent(MotionEvent ev)  这个方法用来分发TouchEvent，返回true，事件传递，返回false，不传
 （2）public boolean onInterceptTouchEvent(MotionEvent ev) 这个方法用来拦截TouchEvent，默认返回false，返回true表示拦截。
 （3）public boolean onTouchEvent(MotionEvent ev) 这个方法用来处理TouchEvent
+
+
+6.1. 什么情况下会发生anr
+
+(1). KeyDispatchTimeout(5 seconds) --主要类型按键或触摸事件在特定时间内无响应
+(2). BroadcastTimeout(10 seconds) --BroadcastReceiver在特定时间内无法处理完成
+(3). ServiceTimeout(20 seconds) --小概率类型 Service在特定的时间内无法处理完成
  
