@@ -12,3 +12,10 @@ AMS提供的功能主要包括以下几个方面：
    
    (1)对于Android四大组件（activity service broadcast content provider）的管理，包括启动，生命周期管理等
    (2)进程OOM adj以级LRU weight管理
+
+
+
+3.WMS为所有窗口分配Surface(Surface是一块画布)，掌管Surface的显示顺序（Z-order）以及位置尺寸，控制窗口动画，并且还是输入系统的一重要的中转站。
+本章将深入分析WMS的两个基础子系统的工作原理：
+·  布局系统（Layout System），计算与管理窗口的位置、层次。
+·  动画系统（Animation System），根据布局系统计算的窗口位置与层次渲染窗口动画。
