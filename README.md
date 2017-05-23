@@ -2,7 +2,7 @@
 Android从启动到程序运行发生的事情:http://blog.csdn.net/jonstank2013/article/details/51118563（重要，需要多看看）
 Android内存泄露  http://blog.csdn.net/gemmem/article/details/13017999
 ANT打包android http://blog.csdn.net/liuhe688/article/details/6679879
- 
+android studio jni  https://my.oschina.net/SunnyTime/blog/612612
  
 1.MiniSdkVersion小于 13 时候：
 
